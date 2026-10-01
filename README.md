@@ -68,10 +68,12 @@ notes/
 
 ```
 aurora-notes/
-├── qml/
-├── rpm/
-├── src/
-└── translations/
+├── icons/          # app icons
+├── qml/            # UI
+├── rpm/            # packaging
+├── screenshots/
+├── src/            # C++ sources
+└── translations/   # .ts files
 ```
 
 Source code is located in the `src` directory and is organized by function:

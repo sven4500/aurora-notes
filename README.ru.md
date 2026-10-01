@@ -68,10 +68,12 @@ notes/
 
 ```
 aurora-notes/
-├── qml/
-├── rpm/
-├── src/
-└── translations/
+├── icons/          # иконки приложения
+├── qml/            # интерфейс
+├── rpm/            # упаковка
+├── screenshots/
+├── src/            # исходники C++
+└── translations/   # файлы .ts
 ```
 
 Исходный код находится в каталоге `src` и разделён по назначению:
