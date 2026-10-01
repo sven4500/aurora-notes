@@ -10,6 +10,10 @@ A notes app for **Aurora OS** (and **Sailfish OS**), written in C++/Qt 5 and QML
 
 It is translated into English and Russian and distributed under the BSD-3-Clause license.
 
+## Screenshots
+
+<img src="C:\Users\Ivars\Documents\Repositories\aurora-notes\schreenshots\screenshots.png" style="zoom:67%;" />
+
 ## Features
 
 The application has the following features:
@@ -21,15 +25,27 @@ The application has the following features:
 
 ## Architecture
 
-The app follows an MVVM layout. The view is made of QML pages and reusable QML elements. View models are exposed to QML as context properties, named with an underscore prefix (e.g. `_listViewModel`). Models contain the business logic and handle media files. The DAO is an abstraction layer over SQLite access; it emits signals when records are inserted, updated or removed. DTOs are plain data structures passed between the DAO, models and view models.
+The app follows an MVVM layout:
+
+- the view is made of QML pages and reusable QML elements;
+
+- view models are exposed to QML as context properties, named with an underscore prefix (e.g. `_listViewModel`);
+
+- models contain the business logic and handle media files;
+
+- the DAO is an abstraction layer over SQLite access; it emits signals when records are inserted, updated or removed;
+
+- DTOs are plain data structures passed between the DAO, models and view models.
 
 ```mermaid
 flowchart TD
-    QML[QML pages] --> VM[ViewModels]
+    QML[QML pages] --> VM[Note view models]
+    QML --> LVM[ListViewModel]
     VM --> M[Models]
     M --> DAO[DatabaseDAO]
-    DAO --> DB[(SQLite)]
     M --> FS[(Media files)]
+    DAO --> DB[(SQLite)]
+    DAO -. signals .-> LVM
 ```
 
 ### Data storage
