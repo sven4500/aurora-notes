@@ -12,7 +12,7 @@ It is translated into English and Russian and distributed under the BSD-3-Clause
 
 ## Screenshots
 
-<img src="C:\Users\Ivars\Documents\Repositories\aurora-notes\schreenshots\screenshots.png" style="zoom:67%;" />
+<img src="screenshots/screenshots.png" alt="Aurora Notes screenshots" width="67%" />
 
 ## Features
 
