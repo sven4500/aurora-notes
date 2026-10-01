@@ -2,6 +2,8 @@
 
 # Aurora Notes
 
+**English** | [Русский](README.ru.md)
+
 A notes app for **Aurora OS** (and **Sailfish OS**), written in C++/Qt 5 and QML with Sailfish Silica. It keeps three kinds of notes in one list:
 
 - **text notes**: a title and free-form text;
