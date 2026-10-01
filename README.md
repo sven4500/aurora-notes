@@ -66,6 +66,14 @@ notes/
 
 ### Project structure
 
+```
+aurora-notes/
+├── qml/
+├── rpm/
+├── src/
+└── translations/
+```
+
 Source code is located in the `src` directory and is organized by function:
 
 - `dao/*` CRUD data access layer on top of the SQLite `media` table;
